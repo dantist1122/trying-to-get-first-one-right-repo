@@ -20,6 +20,12 @@ describe('Page opening', function () {
         assert.equal(title1, 'BugTracker', 'Title1 is incorrect'); //compare that "title" variable equals to "Bug Tracker" and error-message if not
     });
 
+    it('get header title', function(){
+        let title1 = browser.getText('.custom-header span');
+        console.log(title1);
+        assert.equal(title1, 'BugTracker', 'Title1 is incorrect'); //compare that "title" variable equals to "Bug Tracker" and error-message if not
+    });
+
     // it('reg Button', function(){
     //     browser.click('#registration');
     //     // let myButton = $('.mt-0');
